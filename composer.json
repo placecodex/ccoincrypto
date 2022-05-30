@@ -1,0 +1,19 @@
+{
+    "name": "placecodex/coincrypto",
+    "description": "test package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Placecodex\\Coincrypto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "centrinoDuo",
+            "email": "michael12@hotmail.es"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
