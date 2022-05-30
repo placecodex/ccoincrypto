@@ -14,7 +14,7 @@
             "email": "michael12@hotmail.es"
         }
     ],
-    "minimum-stability": "dev-master",
+    "minimum-stability": "dev",
      "prefer-stable": true,
     "require": {
         "php": "^7.2",
