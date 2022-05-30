@@ -1,11 +1,11 @@
 {
-    "name": "placecodex/coincrypto",
+    "name": "placecodex/ccoincrypto",
     "description": "test package",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Placecodex\\Coincrypto\\": "src/"
+            "Placecodex\\CCoincrypto\\": "src/"
         }
     },
     "authors": [
@@ -15,5 +15,6 @@
         }
     ],
     "minimum-stability": "dev",
+     "prefer-stable": true,
     "require": {}
 }

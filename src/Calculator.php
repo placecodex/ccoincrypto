@@ -1,4 +1,5 @@
-namespace Placecodex\Coincrypto;
+<?php
+namespace Placecodex\CCoincrypto;
 
 class Calculator
 {
