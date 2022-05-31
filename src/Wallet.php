@@ -110,4 +110,72 @@ class Wallet
 
         
      }
+
+
+
+
+     public static function ltc()
+    {
+
+        $Bitcoin = new Bitcoin();
+        $Bitcoin->setNetwork(NetworkFactory::litecoin()
+      );
+        $network = $Bitcoin->getNetwork();
+
+
+        $random = new Random();
+        $privKeyFactory = new PrivateKeyFactory();
+        $privateKey = $privKeyFactory->generateCompressed($random);
+        $publicKey = $privateKey->getPublicKey();
+        $address = new PayToPubKeyHashAddress($publicKey->getPubKeyHash());
+        $pk = $privateKey->toWif($network);
+         $pkhex = $privateKey->getHex($network);
+        $isCompressed = ($privateKey->isCompressed()?"true":"false");
+
+
+
+    
+      
+        return   array(
+
+        'privatekey'      => $pk,
+        'coin'           => 'LTC',
+        'name'            => 'Litecoin',
+        'network'        => 'mainnet',
+        'address'        => $address->getAddress(),
+        );
+
+     }
+
+
+     public static function ltctestnet()
+    {
+
+        $Bitcoin = new Bitcoin();
+        $Bitcoin->setNetwork(NetworkFactory::litecoinTestnet()
+      );
+        $network = $Bitcoin->getNetwork();
+
+
+        $random = new Random();
+        $privKeyFactory = new PrivateKeyFactory();
+        $privateKey = $privKeyFactory->generateCompressed($random);
+        $publicKey = $privateKey->getPublicKey();
+        $address = new PayToPubKeyHashAddress($publicKey->getPubKeyHash());
+        $pk = $privateKey->toWif($network);
+
+
+      
+        $pkhex = $privateKey->getHex($network);
+        $isCompressed = ($privateKey->isCompressed()?"true":"false");
+
+        return   array(  
+        'privatekey'     => $pk,
+        'coin'           => 'LTC',
+        'name'           => 'Litecoin',
+        'network'        => 'testnet' ,
+        'address'        => $address->getAddress(),
+        );
+
+     }
 }
