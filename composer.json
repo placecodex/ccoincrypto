@@ -22,8 +22,12 @@
         "ext-curl": "*",
         "ext-gmp": "^7.2",
         "ext-openssl": "*",
+
        
         "kornrunner/keccak": "^1.1.0",
+        "web3p/ethereum-tx": "dev-master",
+        "mbezhanov/ethereum-converter": "dev-master",
         "web3p/ethereum-tx": "dev-master"
+      
     }
 }
