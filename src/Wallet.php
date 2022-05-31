@@ -71,11 +71,8 @@ class Wallet
         return   array(
 
         'privatekey'      =>$pk,
-        'pkhex'   => $pkhex,
-        
-        'isCompressed'   =>$isCompressed,
-        'crypto_symbol'  => 'BTC',
-        'crypto_name'    => 'Bitcoin',
+        'coin'  => 'BTC',
+        'name'    => 'Bitcoin',
         'network'        => 'mainnet',
         'address'        => $address->getAddress(),
         );
@@ -105,9 +102,8 @@ class Wallet
         return   array(
 
         'privatekey' =>$pk,
-         'pkhex'      => $pkhex,
-        'crypto_symbol'  => 'BTC',
-        'crypto_name'    => 'Bitcoin',
+        'coin'  => 'BTC',
+        'name'    => 'Bitcoin',
         'network'        => 'testnet',
         'address'        => $address->getAddress(),
         );
