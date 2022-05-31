@@ -1,4 +1,4 @@
-# coincrypto
+# ccoincrypto
 A php library for the generation of bitcoin, litecoin and dogecoin wallets
 
 - BTC
