@@ -27,7 +27,8 @@
         "kornrunner/keccak": "^1.1.0",
         "web3p/ethereum-tx": "dev-master",
         "mbezhanov/ethereum-converter": "dev-master",
-        "web3p/ethereum-tx": "dev-master"
+        "web3p/ethereum-tx": "dev-master",
+         "bitwasp/bitcoin": "~1.0"
       
     }
 }
