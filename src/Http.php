@@ -36,6 +36,7 @@ class Http
 
   static function status(){
     return true;
+}
 
 
 
@@ -46,7 +47,7 @@ class Http
  */
   static function apiKey(){
 
-  if(self::$network == 'testnet'){
+  if($this->network == 'testnet'){
     return (string)$this->api_key_testnet;
   } return (string)$this->$api_key;
   }// end function
