@@ -15,7 +15,7 @@ use Exception;
 
 class Http 
 {
-  public static $network;
+  public  $network;
   //public  $apiKey;
   public  $api_key_testnet;
   public  $api_key;
