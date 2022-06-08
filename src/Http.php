@@ -8,8 +8,8 @@ use GuzzleHttp\Client;
 //use Illuminate\Support\Str;
 //use Illuminate\Support\Collection;
 
-use Log;
-use Config;
+//use Log;
+//use Config;
 use Exception;
 
 
@@ -17,9 +17,9 @@ class Http
 {
   public static $network;
   //public  $apiKey;
-  public static $api_key_testnet;
-  public static $api_key;
-  public static $Api_url ='http://52.3.8.64:3000';
+  public  $api_key_testnet;
+  public  $api_key;
+  public  $Api_url ='http://52.3.8.64:3000';
 
 
     //
@@ -32,6 +32,14 @@ class Http
 
   }
 
+
+
+  static function status(){
+    return true;
+
+
+
+
 /**
  * [apiKey description]
  * @return [type] [description]
@@ -39,8 +47,8 @@ class Http
   static function apiKey(){
 
   if(self::$network == 'testnet'){
-    return (string)self::$api_key_testnet;
-  } return (string)self::$api_key;
+    return (string)$this->api_key_testnet;
+  } return (string)$this->$api_key;
   }// end function
 
 
