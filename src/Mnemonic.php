@@ -1,5 +1,6 @@
 <?php
 namespace Placecodex\CCoincrypto;
+require('Const.php');
 
 use BitWasp\Bitcoin\Crypto\Random\Random;
 use BitWasp\Bitcoin\Key\Factory\HierarchicalKeyFactory;

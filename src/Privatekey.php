@@ -1,6 +1,6 @@
 <?php
 namespace Placecodex\CCoincrypto;
-
+require('Const.php');
 use BitWasp\Bitcoin\Key\Factory\HierarchicalKeyFactory;
 use BitWasp\Bitcoin\Key\Factory\PrivateKeyFactory;
 use BitWasp\Bitcoin\Mnemonic\Bip39\Bip39SeedGenerator;
@@ -20,15 +20,7 @@ use Mdanter\Ecc\EccFactory;
 class Privatekey
 {
 
-    const ETH_DERIVATION_PATH = "44'/60'/0'/0";
-    const VET_DERIVATION_PATH = "44'/818'/0'/0";
-    const BTC_DERIVATION_PATH = "44'/0'/0'/0";
-    const LTC_DERIVATION_PATH = "44'/2'/0'/0";
-    const BCH_DERIVATION_PATH = "44'/145'/0'/0";
-    const LYRA_DERIVATION_PATH = "44'/497'/0'/0";
-    const TESTNET_DERIVATION_PATH = "44'/1'/0'/0";
-    const TRON_DERIVATION_PATH = " m/44'/195'/0'";
-
+  
 
     public static function btc()
     {

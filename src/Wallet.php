@@ -1,6 +1,6 @@
 <?php
 namespace Placecodex\CCoincrypto;
-
+require('Const.php');
 use BitWasp;
 use BitWasp\Bitcoin\Address\AddressFactory;
 use BitWasp\Bitcoin\Address\AddressCreator;
