@@ -57,7 +57,7 @@ class Http
    public static function post($data, $path){
         $client = new Client();
         $request = $client->request('POST',
-          self::$Api_url.$path, [
+          $this.Api_url.$path, [
         'headers' => [
           'x-api-key' => self::apiKey(),
       ],'form_params' => $data,
