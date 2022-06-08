@@ -75,7 +75,7 @@ class Http
         ); 
         $client = new Client();
         $request = $client->request('POST',
-          self::$Api_url.$path, [
+           $this.Api_url.$path, [
         'headers' => [
           'x-api-key' => self::apiKey(),
       ],'form_params' =>$dataEncrypted,
@@ -90,7 +90,7 @@ class Http
    public static function postEncrypted($data, $path){
         $client = new Client();
         $request = $client->request('POST',
-          self::$Api_url.$path, [
+           $this.Api_url.$path, [
         'headers' => [
           'x-api-key' => self::apiKey(),
       ],'form_params' => $data,
@@ -108,7 +108,7 @@ class Http
 
       $client = new Client();
       $request = $client->request('GET',
-        self::$Api_url.$path,[
+         $this.Api_url.$path,[
       'headers' => [
         'x-api-key' => self::apiKey(),
     ]]);
@@ -128,7 +128,7 @@ class Http
 
         $client = new Client();
         $request = $client->request('PUT', 
-          self::$Api_url.$path, [
+           $this.Api_url.$path, [
         'headers' => [
         'x-api-key' => self::apiKey(),
         ],'form_params' => $data,
@@ -142,7 +142,7 @@ class Http
 
       $client = new Client();
       $request = $client->request('GET',
-        self::$Api_url.$path,[
+         $this.Api_url.$path,[
       'headers' => [
         'x-api-key' => self::apiKey(),
     ]]);
@@ -154,7 +154,7 @@ class Http
        protected static function clearget($path){
 
       $client = new Client();
-      $request = $client->request('GET',self::$Api_url.$path,[
+      $request = $client->request('GET', $this.Api_url.$path,[
       'headers' => [
         'x-api-key' => self::apiKey(),
     ]]);
@@ -166,7 +166,7 @@ class Http
        protected static function delete($path){
 
      $client = new Client();
-      $request = $client->request('DELETE',self::$Api_url.$path,[
+      $request = $client->request('DELETE', $this.Api_url.$path,[
       'headers' => [
         'x-api-key' => self::apiKey(),
     ]]);
